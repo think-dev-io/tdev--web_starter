@@ -1,7 +1,6 @@
 <h1 align='center'>tdev--web_starter</h1>
 <p align='center'>A fast and stable starter template for think-dev web project</p>
 <p align='center'>Mocking up web app with <b>tdev--web_starter</b><sup><em>(speed)</em></sup><br></p><br>
-<p align='center'><a href="https://tdev--web_starter.netlify.app/">Live Demo</a></p><br>
 
 
 ## Features
