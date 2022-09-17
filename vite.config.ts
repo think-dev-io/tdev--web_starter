@@ -91,11 +91,17 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+      },
+      devOptions: {
+        enabled: true,
+      },
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Think-Dev Web Starter',
+        short_name: 'tdev--web',
         theme_color: '#ffffff',
         icons: [
           {
