@@ -7,4 +7,11 @@ export default defineConfig({
     specPattern: 'cypress/e2e/**/*.spec.*',
     supportFile: false,
   },
+
+  component: {
+    devServer: {
+      framework: 'vue',
+      bundler: 'vite',
+    },
+  },
 })
